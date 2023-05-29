@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: darkgray;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+h1:hover { /* стили будут применяться только тогла когда мы навели на элемент мышью*/
+    color: gold;
+    transition: 1s;
+}
+main {
+    width: 90%;
+    margin: auto; /* центрирование блока */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 30px;
+    background-color: rgb(209, 208, 208);
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.5);
+}
+.item {
+    width: calc(50% - 20px); /* если нужно сделать n количество колон нужно 100/n */
+    /* height: 250px; */
+    aspect-ratio: 16/9; 
+    background-color: rgb(228, 200, 18);
+    margin: 10px;
+    background-size: cover; /*картинка занимает всю ширину а по высоте масштабируется*/ /* contsin картинка занимает всю высоту а по ширине масштабируется */
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.item:hover {
+    transform: scale(1.1) rotate(5deg); /* пропорциональное увеличение начинается от 1.n */ /*rotate  поворот картинки*/
+    transition: 1s;
+}
+.item__1 {
+    background-image: url(/images/1.jpg);
+}
+.item__2 {
+    background-image: url(/images/2.jpg);
+}
+.item__3 {
+    background-image: url(/images/3.jpg);
+}
+.item__4 {
+    background-image: url(/images/4.jpg);
+}
+.item__5 {
+    background-image: url(/images/5.jpg);
+}
+.item__6 {
+    background-image: url(/images/6.jpg);
+}
+.item__7 {
+    background-image: url(/images/7.jpg);
+}
+.item__8 {
+    background-image: url(/images/8.jpg);
+}
+/* .grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    } */
+
+

@@ -76,12 +76,10 @@ h1 {
 }
 .img1:hover {
     transition: 1s;
-    margin: auto;
-    width: 80%;
     color: white;
 }
 h2 {
-    margin-top: 235px;
+    margin-top: 225px;
     margin-bottom: 16px;
 }
 .footer {

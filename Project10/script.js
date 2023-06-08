@@ -93,26 +93,26 @@
 // 2. "Your email - arsen@gmail.com. Your login is - user123"
 // 3. "Your email - sergey@gmail.com. Your login is - admin"
 
-let users = [
-    {
-    name: "Aliaksei",
-    email: "aliaks@gmail.com",
-    login: "potatoe",
-    age: 15 
-},
-{
-    name: "Arsen",
-    email: "arsen@gmail.com",
-    login: "user123",
-    age: 25
-},
-{
-    name: "Sergey",
-    email: "sergey@gmail.com",
-    login: "admin",
-    age: 29
-}
-]
+// let users = [
+//     {
+//     name: "Aliaksei",
+//     email: "aliaks@gmail.com",
+//     login: "potatoe",
+//     age: 15 
+// },
+// {
+//     name: "Arsen",
+//     email: "arsen@gmail.com",
+//     login: "user123",
+//     age: 25
+// },
+// {
+//     name: "Sergey",
+//     email: "sergey@gmail.com",
+//     login: "admin",
+//     age: 29
+// }
+// ]
 // for(let i = 0; i < users.length; i++) {
 //     console.log(`Your email - ${users[i].email}. Your login is - ${users[i].login} `)
 // }
@@ -135,11 +135,49 @@ let users = [
 // }
 // console.log(validateUsers)
 
-const validatedUsers = [] //
-for(let i = 0; i < users.length; i++) {
-    if(users[i].age > 18) {
-        validatedUsers.push({login: users[i].login, name : users[i].name}) // push - метод который добавляет элемент в конец массива
+// const validatedUsers = [] //
+// for(let i = 0; i < users.length; i++) {
+//     if(users[i].age > 18) {
+//         validatedUsers.push({login: users[i].login, name : users[i].name}) // push - метод который добавляет элемент в конец массива
+//     }
+// }
+// console.log(validatedUsers)
+
+
+// Есть массив объектов products. Нужно вывести в консоли имена только тех продукты,
+// категория которых - TV
+
+
+const products = [
+    {
+        name: "Acer",
+        category: "laptop"
+    },
+    {
+        name: "Samsung",
+        category: "TV"
+    },
+    {
+        name: "Iphone 14",
+        category: "phone"
+    },
+    {
+        name: "Panasonic",
+        category: "TV"
+    }
+]
+// 1 решение в новом массиве
+const validatedProducts = []
+for (let i = 0; i < products.length; i++) {
+    if (products[i].category == "TV") {
+        validatedProducts.push({ name: products[i].name }) // push - метод который добавляет элемент в конец массива
     }
 }
-console.log(validatedUsers)
+console.log(validatedProducts)
 
+// 2 решение вывести из массива и дополнительно вывести laptop
+for (let i = 0; i < products.length; i++) {
+    if (products[i].category == "TV" || products[i].category == "laptop") {
+        console.log(products[i].name)
+    }
+}

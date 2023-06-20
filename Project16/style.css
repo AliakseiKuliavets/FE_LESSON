@@ -5,11 +5,53 @@
 }
 .add-product {
     width: 70%;
-    margin: auto;
+    margin: 140px auto 60px auto;
     background-color: #34495E;
     border-radius: 20px;
+    padding: 77px 0;
 }
-form {
+.product-name,
+.product-price,
+.add-sub {
     display: flex;
     justify-content: center;
+    background: #D9D9D9;
+    width: 80%;
+    margin: 0 auto 36px auto;
+    padding: 10px 35px;
+    font-size: 25px;
+}
+.add-sub {
+    background: #27AE60;
+    color: white;
+    margin-top: 86px;
+    cursor: pointer;
+}
+.productNew {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: #34495E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.productNewP {
+    font-size: 25px; 
+    padding: 20px 45px;
+}
+.clear {
+    display: none;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: #FC7171;
+    border: 4px solid #000000;
+    cursor: pointer;
 }
